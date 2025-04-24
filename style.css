@@ -1,0 +1,35 @@
+*{
+    background-color: #f4fff4;
+}
+h1 {
+    color: #87a687;
+    text-shadow: 2px 2px green;
+}
+h2 {
+    text-decoration: red overline underline dotted;
+    font-family: Hiragino Maru Gothic ProN W4;
+}
+p.target {
+    border: 2px solid #918181;
+    padding: 20px;
+    margin: 0px 50px 5px 50px;
+    width: 1700px;
+    background: #dfeef7;
+}
+a:link {
+    color: pink;
+}
+a:visited{
+    color: #958c8c;
+}
+a:hover{
+    colar: red;
+    text-decoration: none;
+}
+p.tag2{
+    border: 2px solid #918181;
+    padding: 20px;
+    margin: 0px 70px 5px 50px;
+    width: 1500px;
+    background: #f7dfdf; 
+}
