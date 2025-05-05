@@ -1,0 +1,10 @@
+*{
+    background-color: #ffffff;
+}
+table.zentai{
+    display:flex;
+    flex-direction: row;
+    width: 500px;
+    border: 1px solid gray
+    padding: 5px 5px 5px 0;
+}
