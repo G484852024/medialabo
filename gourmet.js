@@ -3,6 +3,11 @@
 function print(data) {
   for(let r of data.results.shop){
     console.log(r.name);
+    console.log(r.station_name);
+    console.log(r.address);
+    console.log(r.genre.name);
+    console.log(r.budget.name);
+    console.log(r.open);
   }
 }
 
