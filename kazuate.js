@@ -8,16 +8,16 @@ let kaisu = 0;
 // 予想を4回実行する
 // 将来以下の hantei(); の4回の呼び出しを全て削除する
 // 代わりにここでは，ボタンを押したら hantei() を呼び出すイベント処理をする
-hantei();
-hantei();
-hantei();
-hantei();
-
+let b = document.querySelector('button#kaitou');
+b.addEventListener('click',hantei); 
+let n,yoso,p;
 // ボタンを押した後の処理をする関数 hantei() の定義
 function hantei() {
-  // 将来ここでは 4 ではなくテキストボックスに指定された数値を yoso に代入する
-  let yoso = 4;
+  n = document.querySelector('input[name="yosou"]'); 
+  yoso = Number(n.value);
   kaisu = kaisu + 1;
+  p = document.querySelector('span#answer');
+
   // 課題3-1: 正解判定する
   // kotae と yoso が一致するかどうか調べて結果を出力
   // 課題3-1における出力先はコンソール
