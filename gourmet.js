@@ -12,8 +12,12 @@ function print(data) {
 }
 
 // 課題5-1 の関数 printDom() はここに記述すること
+let n = document.querySelector('input[name="sentaku"]'); 
+let b = document.querySelector('button#kensaku');
+b.addEventListener('click',printDom);
+//nは入力したもの,bはボタン押した時の反応
 function printDom(data) {
-
+  console.log(n.value);
 }
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
