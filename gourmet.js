@@ -17,8 +17,29 @@ let b = document.querySelector('button#kensaku');
 b.addEventListener('click',printDom);
 //nは入力したもの,bはボタン押した時の反応
 function printDom(data) {
-  console.log(n.value);
+  
 }
+let div = document.createElement('div'); 
+  div.setAttribute('id','result');
+  let body = document.querySelector('body'); 
+  body.insertAdjacentElement('beforeend',div);
+  let table = document.createElement('table');
+  div.insertAdjacentElement('beforeend',table);
+  let thead = document.createElement('thead'); 
+  table.insertAdjacentElement('beforeend',thead);
+  let tr = document.createElement('tr'); 
+  thead.insertAdjacentElement('beforeend',tr); 
+  let th = document.createElement('th'); 
+  tr.insertAdjacentElement('beforeend',th);
+  th.setAttribute('scope','col'); 
+  th.textContent = '名前'; 
+  let td = document.createElement('td'); 
+  td.setAttribute('scope','col'); 
+  td.setAttribute('id','name'); 
+  let tbody = document.createElement('tbody'); 
+  table.insertAdjacentElement('beforeend',tbody);
+  tbody.insertAdjacentElement('beforeend',tr); 
+  
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
 
