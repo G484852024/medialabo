@@ -1,12 +1,101 @@
-table ,th,td{
-    border: solid;
-}
-th{
-    width: 100px;
-}
-td{
-    width: 1000px;
-}
-*{
-    background-color: #efefef;
-}
+/* 全体レイアウト */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f9fb;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* 見出し */
+  h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  /* セレクトボックス・ボタン */
+  #genre {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  #kensaku {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* 結果テーブル */
+  #result table {
+    margin: 30px auto;
+    border-collapse: collapse;
+    width: 90%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #result th, #result td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  #result th {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+  }
+  
+  #result tr:hover {
+    background-color: #f2f2f2;
+  }
+/* 検索結果の個別カード */
+.shop {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* 各情報の段落 */
+  .shop p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+    word-break: break-word; /* 長い単語も折り返す */
+  }
+  /* 検索結果件数と件目表示を左寄せ */
+#result > p {
+    text-align: left;
+    margin-left: 5%;
+  }
+  
+  /* 検索結果のカード全体調整 */
+  .shop {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    text-align: left;
+    width: 90%;
+  }
+  
+  /* 情報の段落調整 */
+  .shop p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+    word-break: break-word;
+  }
+  
+
+  
