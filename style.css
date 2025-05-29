@@ -33,3 +33,10 @@ p.tag2{
     width: 1300px;
     background: #f7dfdf; 
 }
+p.guti{
+    border: 2px solid #736472;
+    padding: 20px;
+    margin: 0px 70px 5px 50px;
+    width: 1300px;
+    background: #dfeef7;
+}
